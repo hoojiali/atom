@@ -55,3 +55,5 @@ rebase 做了什么操作呢？
 其次，把上面的操作临时保存成 patch 文件，存在 .git/rebase 目录下；
 然后，把 feature1 分支更新到最新的 master 分支；
 最后，把上面保存的 patch 文件应用到 feature1 分支上；
+
+commit记录，feture1分支是基于hotfix合并后的master，自然而然称为了最领先的分支，而且无merge的commit记录
