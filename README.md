@@ -24,3 +24,4 @@ git branch -d dev 删除分支，-D强制删除分支
 git switch -c dev 创建并切换到新的dev分支   
 git switch master 直接切换到已有的master分支 Git会自动提示当前分支比远程分支超前x个提交
 
+Git用 <<<<<<<, =======, >>>>>>>标记处不同分支的内容
