@@ -25,3 +25,6 @@ git switch -c dev 创建并切换到新的dev分支
 git switch master 直接切换到已有的master分支 Git会自动提示当前分支比远程分支超前x个提交
 
 Git用 <<<<<<<, =======, >>>>>>>标记处不同分支的内容
+
+合并分支时，如果可能Git会用Fast forward模式（删除分支后，会丢掉分支信息）
+强制禁用 Fast forward， Git会在merge时生成一个新的commit，从而在分支历史上课看出分支信息
