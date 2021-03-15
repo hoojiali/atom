@@ -9,3 +9,9 @@ HEAD不是指向提交，而是指向当前分支，当前分支才是指向提�
 创建新的分支，Git新建一个指针指向master相同的提交，再把HEAD指向新建分支，表示当前分支位置
 所以Git合并分支也很快，就改改指针，工作区内容也不变
 合并完成甚至可以删除dev分支
+
+创建分支：
+git checkout -b branch_name  命令加上-b参数表示创建并切换，相当于   
+git branch branch_name   
+git checkout branch_name   
+然后使用 git branch 查看分支信息，在当前分支前会有个* 号
