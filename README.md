@@ -50,3 +50,8 @@ bug修改，将修改的提交所做的修改复制到dev分支，ps： 只想�
 
 提交历史分叉了如何解决？
 这是在dev开发的hotfix
+rebase 做了什么操作呢？
+首先， git 会把 feature1 分支里面的每个 commit 取消掉；
+其次，把上面的操作临时保存成 patch 文件，存在 .git/rebase 目录下；
+然后，把 feature1 分支更新到最新的 master 分支；
+最后，把上面保存的 patch 文件应用到 feature1 分支上；
