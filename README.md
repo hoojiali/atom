@@ -15,3 +15,8 @@ git checkout -b branch_name  命令加上-b参数表示创建并切换，相当�
 git branch branch_name   
 git checkout branch_name   
 然后使用 git branch 查看分支信息，在当前分支前会有个* 号
+
+合并及删除分支   
+git merge dev ，改名了用于合并指定分支到当前分支，Fast-forward为快进模式，直接把master指向dev的当前提交
+git branch -d dev 删除分支，-D强制删除分支
+
