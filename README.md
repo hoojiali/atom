@@ -28,3 +28,6 @@ Git用 <<<<<<<, =======, >>>>>>>标记处不同分支的内容
 
 合并分支时，如果可能Git会用Fast forward模式（删除分支后，会丢掉分支信息）
 强制禁用 Fast forward， Git会在merge时生成一个新的commit，从而在分支历史上课看出分支信息
+
+--no-ff 方式的git merge：  
+$ git merge --no-ff -m "merge with no-ff" dev
