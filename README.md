@@ -49,3 +49,4 @@ bug修改，将修改的提交所做的修改复制到dev分支，ps： 只想�
 在master分支上修复的bug，想要合并到当前dev分支，可以用git cherry-pick <commit>命令，把bug提交的修改“复制”到当前分支，避免重复劳动。
 
 提交历史分叉了如何解决？
+这是在dev开发的hotfix
