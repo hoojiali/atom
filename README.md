@@ -57,3 +57,11 @@ rebase 做了什么操作呢？
 最后，把上面保存的 patch 文件应用到 feature1 分支上；
 
 commit记录，feture1分支是基于hotfix合并后的master，自然而然称为了最领先的分支，而且无merge的commit记录
+
+在 rebase 的过程中，也许会出现冲突 conflict 。在这种情况， git 会停止 rebase 并会让你去解决冲突。在解决完冲突后，用 git add 命令去更新这些内容。
+注意，你无需执行 git-commit，只要执行 continue
+git rebase --continue
+这样 git 会继续应用余下的 patch 补丁文件。
+
+7.在任何时候，我们都可以用 --abort 参数来终止 rebase 的行动，并且分支会回到 rebase 开始前的状态。
+git rebase —abort
