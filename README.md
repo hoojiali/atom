@@ -37,3 +37,13 @@ $ git merge --no-ff -m "merge with no-ff" dev
 而fast forward合并就看不出来曾经做过合并。
 
 bug修复分支要从稳定主线最新提交处签出
+
+Git还提供了一个stash功能，可以把当前工作现场“储藏”起来，等以后恢复现场后继续工作：git stash
+用git status查看工作区，就是干净的（除非有没有被Git管理的文件），因此可以放心地创建分支来修复bug
+Git把stash内容存在某个地方了，但是需要恢复一下，有两个办法
+一是用git stash apply恢复，但是恢复后，stash内容并不删除，你需要用git stash drop来删除；
+另一种方式是用git stash pop，恢复的同时把stash内容也删了：
+
+bug修改，将修改的提交所做的修改复制到dev分支，ps： 只想复制修复这个提交所做的更改，并不是把整个master分支merge过来
+为了方便操作，Git专门提供了一个cherry-pick命令，让我们能复制一个特定的提交到当前分支：
+在master分支上修复的bug，想要合并到当前dev分支，可以用git cherry-pick <commit>命令，把bug提交的修改“复制”到当前分支，避免重复劳动。
