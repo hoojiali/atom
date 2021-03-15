@@ -22,5 +22,5 @@ git branch -d dev 删除分支，-D强制删除分支
 
 最新版的Git提供新的命令：   
 git switch -c dev 创建并切换到新的dev分支   
-git switch master 直接切换到已有的master分支
+git switch master 直接切换到已有的master分支 故意制造些冲突来解决
 
