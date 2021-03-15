@@ -31,3 +31,7 @@ Git用 <<<<<<<, =======, >>>>>>>标记处不同分支的内容
 
 --no-ff 方式的git merge：  
 $ git merge --no-ff -m "merge with no-ff" dev
+
+因为本次合并要创建一个新的commit， 所以加上-m参数把commit描述写进去
+合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，
+而fast forward合并就看不出来曾经做过合并。
