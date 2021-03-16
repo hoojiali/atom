@@ -76,3 +76,7 @@ ps: 在rebase过程中，也会出现冲突conflict。此时git会停止rebase�
 
 在解决rebase conflict时，你无需执行git commit， 只要进行continue `git rebase --continue`
 这样git会继续应用余下的patch补丁文件
+
+任何时候，都可以使用--abort参数来终止rebase的行动，并且分支会回到rebase开始前的状态   
+`git rebase --abort`
+
