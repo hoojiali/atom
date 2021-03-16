@@ -71,3 +71,5 @@ git rebase工作原理：
 1. git会将dev中的每个commit取消掉，会将操作临时保存成patch文件保存在.git/rebase 目录下
 2. 再将dev分支更新到最新的master分支
 3. 最后将保存的patch文件应用到dev分支上
+
+ps: 在rebase过程中，也会出现冲突conflict。此时git会停止rebase并会让你去解决冲突，解决完后使用git add命令去更改这些内容。
