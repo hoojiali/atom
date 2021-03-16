@@ -73,3 +73,6 @@ git rebase工作原理：
 3. 最后将保存的patch文件应用到dev分支上
 
 ps: 在rebase过程中，也会出现冲突conflict。此时git会停止rebase并会让你去解决冲突，解决完后使用git add命令去更改这些内容。
+
+在解决rebase conflict时，你无需执行git commit， 只要进行continue `git rebase --continue`
+这样git会继续应用余下的patch补丁文件
